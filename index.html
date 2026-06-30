@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Mbeya Industrial · Manufacturing & Machines</title>
+  <!-- Font & base styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+  <!-- Font Awesome (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="MbeyaTech Logo" class="logo-image" />
+        <span class="logo-text">BIG-MAN<span class="logo-highlight">MACHINE</span></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#machines" class="nav-link">Machines</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#rentals" class="nav-link">Rentals</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon" id="langIcon">TZ</span> <span id="langLabel">Swahili</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-bg" id="heroBg">
+        <!-- Industrial Background Image -->
+        <div class="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=80');"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title" data-key="heroTitle">Engineered <span class="highlight">for Excellence</span> Human Good!</h1>
+          <p class="hero-sub" data-key="heroSub">Manufacturing, Sales, Rentals, and Engineering Solutions</p>
+          <div class="hero-cta">
+            <a href="#machines" class="btn btn-primary" data-key="viewMachines">
+              <i class="fas fa-cog"></i> View Machines
+            </a>
+            <a href="#contact" class="btn btn-outline" data-key="contactUs">
+              <i class="fas fa-envelope"></i> Contact Us
+            </a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="7">0</span>
+            <span class="stat-label" data-key="statMachines">Machines Developed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="120">0</span>
+            <span class="stat-label" data-key="statClients">Clients Served</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="24">0</span>
+            <span class="stat-label" data-key="statSupport">24/7 Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-icon icon-1"><i class="fas fa-cogs"></i></div>
+      <div class="floating-icon icon-2"><i class="fas fa-wrench"></i></div>
+      <div class="floating-icon icon-3"><i class="fas fa-industry"></i></div>
+      <div class="floating-icon icon-4"><i class="fas fa-gear"></i></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-label" data-key="aboutLabel">About Us</div>
+        <h2 class="section-title" data-key="aboutTitle">Engineering the Future, from <span style="color:var(--primary);">Mbeya</span></h2>
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p data-key="aboutStory"><strong>Our story</strong> — Founded in Mbeya, we combine local expertise with global engineering standards. We design and manufacture machines that solve real problems for agriculture, construction, and small industries.</p>
+            <div class="about-mission">
+              <div>
+                <span class="badge">Vision</span>
+                <p data-key="vision">To be East Africa's most trusted industrial solutions provider.</p>
+              </div>
+              <div>
+                <span class="badge">Mission</span>
+                <p data-key="mission">Deliver durable, affordable machines and services that empower communities.</p>
+              </div>
+            </div>
+            <div class="about-values">
+              <span class="value-pill"><i class="fas fa-check-circle" style="color:var(--primary);margin-right:6px;"></i>Quality</span>
+              <span class="value-pill"><i class="fas fa-lightbulb" style="color:var(--primary);margin-right:6px;"></i>Innovation</span>
+              <span class="value-pill"><i class="fas fa-handshake" style="color:var(--primary);margin-right:6px;"></i>Integrity</span>
+              <span class="value-pill"><i class="fas fa-users" style="color:var(--primary);margin-right:6px;"></i>Community</span>
+            </div>
+          </div>
+          <div class="about-image fade-up delay-200">
+            <div class="about-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=800&q=80');">
+              <div class="about-image-overlay">
+                <i class="fas fa-play-circle"></i>
+                <span>Watch Our Story</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACHINES SECTION -->
+    <section id="machines" class="section machines">
+      <div class="container">
+        <div class="section-label" data-key="machinesLabel">Our Machines</div>
+        <h2 class="section-title" data-key="machinesTitle">7 machines. <span style="color:var(--primary);">Built to perform.</span></h2>
+        <p class="section-subtitle" data-key="machinesSub">Each machine is engineered for durability, efficiency, and real-world performance in Tanzanian conditions.</p>
+        <div class="machines-grid" id="machinesGrid"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <div class="section-label" data-key="galleryLabel">Gallery</div>
+        <h2 class="section-title" data-key="galleryTitle">See Our <span style="color:var(--primary);">Machines in Action</span></h2>
+        <p class="section-subtitle" data-key="gallerySub">Watch videos and browse images of our machines operating in real-world conditions.</p>
+        
+        <!-- Video Showcase -->
+        <div class="gallery-videos">
+          <h3 class="gallery-subtitle"><i class="fas fa-play-circle" style="color:var(--primary);"></i> <span data-key="videosTitle">Operation Videos</span></h3>
+          <div class="video-grid" id="videoGrid">
+            <div class="video-card">
+              <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1581092335870-84f45c5e75b6?w=600&q=80');">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+              <div class="video-info">
+                <h4 data-key="video1Title">Brick Making Machine in Operation</h4>
+                <p data-key="video1Desc">High-speed brick production at a construction site in Mbeya.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80');">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+              <div class="video-info">
+                <h4 data-key="video2Title">Grain Milling Machine Demo</h4>
+                <p data-key="video2Desc">Processing maize and wheat for local farmers.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80');">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+              <div class="video-info">
+                <h4 data-key="video3Title">Solar Water Pumping System</h4>
+                <p data-key="video3Desc">Efficient water supply for irrigation and community use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery-images">
+          <h3 class="gallery-subtitle"><i class="fas fa-images" style="color:var(--primary);"></i> <span data-key="imagesTitle">Photo Gallery</span></h3>
+          <div class="image-grid" id="imageGrid">
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581092335870-84f45c5e75b6?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581092335870-84f45c5e75b6?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80');">
+              <div class="gallery-overlay">
+                <i class="fas fa-expand"></i>
+                <span>View</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-label" data-key="servicesLabel">Services</div>
+        <h2 class="section-title" data-key="servicesTitle">End‑to‑end <span style="color:var(--primary);">engineering support</span></h2>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- RENTALS SECTION -->
+    <section id="rentals" class="section rentals">
+      <div class="container">
+        <div class="section-label" data-key="rentalsLabel">Rentals</div>
+        <h2 class="section-title" data-key="rentalsTitle">Flexible <span style="color:var(--primary);">machine rental</span></h2>
+        <div class="rentals-card">
+          <div class="rental-content fade-up">
+            <p data-key="rentalDesc">Short‑term or long‑term, we offer affordable rental plans with full technical support and delivery across Tanzania.</p>
+            <ul class="rental-features">
+              <li><i class="fas fa-calendar-alt"></i> <span data-key="rentalPeriod">Flexible periods</span></li>
+              <li><i class="fas fa-tag"></i> <span data-key="rentalPrice">Affordable pricing</span></li>
+              <li><i class="fas fa-headset"></i> <span data-key="rentalSupport">Technical support included</span></li>
+              <li><i class="fas fa-truck"></i> <span data-key="rentalDelivery">Delivery available</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" data-key="rentalCta">
+              <i class="fas fa-file-invoice"></i> Request a Rental Quote
+            </a>
+          </div>
+          <div class="rental-pricing fade-up delay-200">
+            <div class="price-card">
+              <h4>Daily</h4>
+              <p class="price">from TSh 45k</p>
+              <small>Short-term projects</small>
+            </div>
+            <div class="price-card">
+              <h4>Weekly</h4>
+              <p class="price">from TSh 180k</p>
+              <small>Medium-term needs</small>
+            </div>
+            <div class="price-card">
+              <h4>Monthly</h4>
+              <p class="price">from TSh 450k</p>
+              <small>Long-term savings</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-choose" class="section why-choose">
+      <div class="container">
+        <div class="section-label" data-key="whyLabel">Why Choose Us</div>
+        <h2 class="section-title" data-key="whyTitle">Built different. <span style="color:var(--primary);">Built better.</span></h2>
+        <div class="why-grid" id="whyGrid"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-label" data-key="testimonialLabel">Testimonials</div>
+        <h2 class="section-title" data-key="testimonialTitle">What our <span style="color:var(--primary);">clients say</span></h2>
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-track" id="testimonialTrack"></div>
+          <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-label" data-key="contactLabel">Contact</div>
+        <h2 class="section-title" data-key="contactTitle">Let's <span style="color:var(--primary);">work together</span></h2>
+        <div class="contact-grid">
+          <div class="contact-form fade-up">
+            <form id="contactForm">
+              <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Full Name" data-key-placeholder="namePlaceholder" required />
+              </div>
+              <div class="form-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" placeholder="Phone Number" data-key-placeholder="phonePlaceholder" required />
+              </div>
+              <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email Address" data-key-placeholder="emailPlaceholder" required />
+              </div>
+              <div class="form-group">
+                <i class="fas fa-comment"></i>
+                <textarea rows="4" placeholder="Message" data-key-placeholder="messagePlaceholder" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-key="sendMessage">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+          <div class="contact-info fade-up delay-200">
+            <div class="info-card">
+              <i class="fas fa-map-pin"></i>
+              <span data-key="address">Mbeya, Tanzania</span>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone"></i>
+              <span>+255 767 123 456</span>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <span>info@mbeyatech.co.tz</span>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <span data-key="hours">Mon–Fri: 8am – 6pm</span>
+            </div>
+            <div class="map-placeholder">
+              <i class="fas fa-map"></i>
+              <span data-key="mapLabel">📍 Interactive map (Mbeya)</span>
+              <small style="display:block;margin-top:6px;font-weight:400;">Find us at our workshop</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="MbeyaTech Logo" class="footer-logo-image" />
+        <span>BIGMAN<span class="highlight">MACHINES</span></span>
+        <p style="font-size:0.85rem; opacity:0.7; margin-top:0.3rem;">Mbeya · Tanzania</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#machines">Machines</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#rentals">Rentals</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 MbeyaTech. <span data-key="footerRights">All rights reserved.</span></p>
+        <button class="lang-toggle small" id="footerLangToggle">TZ swahili</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
